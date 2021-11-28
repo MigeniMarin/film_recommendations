@@ -1,0 +1,88 @@
+Open cmd and redirect the path to your future working folder.
+
+------------------------------------------------------------------------------------------------------------------------
+Download files from a project:
+------------------------------------------------------------------------------------------------------------------------
+
+1. Downloads a project and its entire history
+
+git clone <remote-url>
+git clone https://github.com/muhammetkole/redi-school-berlin-git-session.git
+
+2. Lists all new or modified files to be committed
+
+git status
+
+3. Lists version history
+
+git log
+git log --graph
+
+------------------------------------------------------------------------------------------------------------------------
+Upload files to a project:
+------------------------------------------------------------------------------------------------------------------------
+
+1. Adds file under version control. Tells git that you want to track changes in this file
+
+git add <file-name>
+
+2. Creates a new commit. Records changes permanently in version history
+
+git commit -m “Descriptive message”
+
+*******************************
+Just in case - Amend the last comment. This option will open an editor and there it is possible to edit the comment
+
+git commit --amend
+
+After editing:
+
+scape --> : (colon) --> wq --> enter
+*******************************
+
+3. Uploads your commits to remote repository
+
+git push origin main
+
+Note: here will the command ask for a token. One must then go to GitHub settings/developer settings and generate the token. 
+           Then in the cmd, after running the pust command, one must enter the token
+
+------------------------------------------------------------------------------------------------------------------------
+Download changes
+------------------------------------------------------------------------------------------------------------------------
+
+1. Download changes from remote repository to your local machine
+
+git pull
+
+------------------------------------------------------------------------------------------------------------------------
+Initialitation (it is done only once)
+------------------------------------------------------------------------------------------------------------------------
+
+1. This creates the folder and files inside it which git uses to track your changes
+
+git init
+
+------------------------------------------------------------------------------------------------------------------------
+Link with remote repo
+------------------------------------------------------------------------------------------------------------------------
+
+Adds where the remote project located to your local project
+
+git remote add <alias-for-remote> <remote-url>
+git remote add origin https://github.com/someuser/project-name.git
+
+------------------------------------------------------------------------------------------------------------------------
+Print remote repo information
+------------------------------------------------------------------------------------------------------------------------
+
+Prints where is the remote project living
+
+git remote -v
+
+------------------------------------------------------------------------------------------------------------------------
+Tutorials:
+Atlassian has some good tutorials https://www.atlassian.com/git/tutorials/what-is-version-control
+Git Cheat Sheets available in different languages
+https://training.github.com
+------------------------------------------------------------------------------------------------------------------------
