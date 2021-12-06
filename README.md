@@ -7,7 +7,6 @@ Project name: Movie Warriors
 Topic: Film recommendationa
 Authors:
 * Migeni Marin
-* Rania khalil
+* Rania Khalil
 * Oksana Palamarchuk
-* Udeme Billy
 ----------------------------------------------------
